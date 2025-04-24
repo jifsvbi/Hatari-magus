@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa Interativo de Hopi Hari</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+<li><a href="pages/ingressos.html">ingressos</a></li>
+<li>
+  <a href="#">Sobre</a>
+</li>
+<li>
+    <a href="#">Atrações</a>
+<ul>
+    <li><a href="atracoes/wildwest.html">Wild West</a></li>
+    <li><a href="atracoes/kamindamundi.html">Kaminda Mundi</a></li>
+    <li><a href="atracoes/mistieri.html">Mistiere</a></li>
+    <li><a href="atracoes/aribabiba.html">Aribabiba</a></li>
+    <li><a href="atracoes/infantasia.html">infantasia</a></li>
+</ul>
+</li>
+<li><a href="#">Atrações</a></li>
+</ul>
+    </nav>
+
+    <!-- Imagem com estilo aplicado diretamente -->
+    <img 
+        src="https://www.melhoresdestinos.com.br/wp-content/uploads/2022/11/mapa-hopi-hari-1.jpeg" 
+        usemap="#image-map" 
+             charset="UTF-8">
+            <title>Mapa Interativo de Hopi Hari</title>
+            <style>
+                img {
+                    width: 1510px;
+                    height: auto;
+                }
+            </style>
+        </head>
+        
+    <map name="image-map">
+        <area target="" alt="wildwest" title="wildwest" href="atracoes/wildwest.html" coords="912,384,199" shape="circle">
+        <area target="" alt="kamindamundi" title="kamindamundi" href="atracoes/kamindamundi.html" coords="406,511,642,332" shape="rect">
+        <area target="" alt="mistieri" title="mistieri" href="atracoes/mistieri.html" coords="332,342,383,202,272,107,127,232" shape="poly">
+    </map>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            imageMapResize();
+        });
+    </script>
+</body>
+</html>
